@@ -2037,8 +2037,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     @media screen and (max-width: 768px) {
       .news__item {
         width: 15.625rem; } }
-    .news__item:nth-child(3) {
-      margin-right: 0; }
+   
       @media (max-width: 1439px) {
         .news__item:nth-child(3) {
           margin-right: 20px; } }
