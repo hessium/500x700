@@ -1,0 +1,24 @@
+.subs {
+    padding: 50px 100px 48px;
+    background: $white;
+    color: $black;
+
+    @include desktops {
+        padding: 50px 55px;
+    }
+
+    @include phones {
+        padding: 30px 15px 47px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+
+        @include phones {
+            font-size: 40px;
+            line-height: 85px;
+            margin-bottom: 21px ;
+        }
+    }
+}
+

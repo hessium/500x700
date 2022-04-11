@@ -1,0 +1,5 @@
+.container {
+    @include phones {
+        min-width: 320px;
+    }
+}

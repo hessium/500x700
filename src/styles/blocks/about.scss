@@ -1,0 +1,99 @@
+.about {
+    display: flex;
+    text-align: left;
+    padding: 0 100px;
+    margin-bottom: 94px;
+
+    @include desktops {
+        padding: 0 55px;
+    }
+
+    @include tablets {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+    }
+
+    @include phones {
+        margin-bottom: 79px;
+    }
+
+    &__title {
+        margin-right: 95px;
+        margin-bottom: 0;
+
+        @include phones {
+            font-size: 40px;
+            margin-right: 0;
+            margin-bottom: 42px;
+
+        }
+    }
+
+    &__item {
+        flex: 1;
+        text-align: center;
+        position: relative;
+        text-align: left;
+        padding: 30px 0 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+      
+
+        @include phones {
+            padding: 22px 0 7px;  
+            
+            &.active {
+                padding-bottom: 25px;
+            }
+        }
+        &:nth-child(2) {
+            @include phones {
+                padding-bottom: 7px;
+            }
+        }
+
+        &--title {
+            border: none;
+            background: transparent;
+            font-size: 24px;
+            line-height: 35px;
+            color: $white;
+            padding: 0;
+            cursor: pointer;
+
+            @include phones {
+                padding-right: 10px;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+        }
+
+        &--content {
+            overflow: hidden;
+            font-size: rem(16px);
+            height: 0;
+            transition: height .3s;
+
+            @include phones {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            
+        }
+
+        &--container {
+            height: 75px;
+            margin-top: 30px;
+            line-height: 24px;
+            max-width: 100%;
+
+            @include phones{
+                height: 144px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+

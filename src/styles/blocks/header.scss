@@ -1,0 +1,35 @@
+.header{
+	display:flex;
+	align-items:center;
+	padding: 77px 100px 85px;
+	
+  
+
+	@include desktops {
+        padding:35px 55px 77px ;
+
+    }
+
+	@include tablets {
+		justify-content: space-between;
+	}
+
+	@include phones {
+		padding:35px 15px 65px ;
+	}
+
+	&__logo {
+		margin-right: 212px;
+
+		@include desktops {
+			margin-right: 170px;
+		}
+
+		@include tablets {
+			margin-right:0;
+
+
+		}
+	}
+}
+

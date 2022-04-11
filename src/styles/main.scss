@@ -1,0 +1,19 @@
+
+$containerWidth: 1440px;
+$baseFontSize: 16px;
+$desktops:1040px;
+$tablets: 768px;
+$phones: 480px;
+$grey: #F5F5F5;
+$white: #ffffff;
+$black:#0B0A0D;
+$green: #75FF77;
+
+
+
+@import 'node_modules/swiper/swiper.scss';
+@import "media.scss"; 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap');
+@import "layout/normalize.scss";
+@import "layout/base.scss";
+@import "blocks/*.scss";

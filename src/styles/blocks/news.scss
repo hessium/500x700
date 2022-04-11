@@ -1,0 +1,124 @@
+.news {
+    padding-left: 100px;
+    padding-right:66px;
+    padding-bottom: 55px;
+    font-weight: 500;
+    @include desktops {
+        padding: 0 55px;
+    }
+
+    @include tablets {
+        padding-left: 12px;
+        padding-right: 15px;
+        padding-bottom: 77px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+
+        @include phones {
+            font-size: 40px;
+            line-height: 85px;
+            margin-bottom: 21px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include phones {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__item {
+        width: rem(400px);
+        margin-right: 20px;
+        margin-bottom: 50px;
+
+        @include desktops {
+             width: rem(330px); 
+             
+                &:nth-child(2){
+                    margin-right: 0;
+
+                    @include phones {
+                        margin-right: 20px;
+                    }
+                }
+
+                &:nth-child(4){
+                    margin-right: 0;
+
+                    @include phones {
+                        margin-right: 20px;
+                    }
+                }   
+        }
+
+        @include tablets{
+            width: rem(250px);
+        }
+        
+       
+
+        &:nth-child(3){
+            margin-right: 0;
+
+            @media (max-width: 1439px) {
+                margin-right: 20px;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--photo {
+            margin-bottom: 34px;
+
+            @include phones {
+                min-height: 264px;
+                min-width: 200px;
+            }
+        }
+
+        &--img {
+            @include phones {
+                min-height: 264px;
+                min-width: 200px;
+                image-rendering: -moz-crisp-edges; /* Firefox */
+                -ms-interpolation-mode: nearest-neighbor;  /* IE */
+                image-rendering: crisp-edges;
+            }
+        }
+
+        &--title {
+            margin-bottom: 13px;
+        }
+
+        &--desc {
+            font-size: 14px;
+            padding-right: 10px;
+            line-height: 21px;
+
+            @include phones {
+                
+                padding-right: 11px;
+            }
+        }
+
+        @include phones {
+            min-width: 200px;
+           
+            margin-right: 20px;
+            margin-bottom: 0;
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
